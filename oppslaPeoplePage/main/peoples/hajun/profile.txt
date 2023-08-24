@@ -1,0 +1,5 @@
+권하준			// Name
+App/Android		// Posigion
+haZuny			// github id
+https://github.com/haZuny	// github link
+hajun.jpg			// img file name
