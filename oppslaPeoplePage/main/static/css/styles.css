@@ -11488,8 +11488,31 @@ fieldset:disabled .btn {
 
 /* Custom */
 
-.header-bg {
-    background-color: #000;
-    width: max-content;
-    height: fit-content;
+a:link {
+    color: black
+}
+
+.seminar-box {
+    background-color: #eeeeee;
+    border-radius: 20rem;
+    padding-top: 0.6%;
+    padding-bottom: 0rem;
+    padding-left: 2%;
+    padding-left: 2%;
+    margin-top: 3%;
+}
+
+.seminar-title {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 0rem;
+}
+
+.seminar-date {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-right: 10%;
+    margin-bottom: 0rem;
 }
