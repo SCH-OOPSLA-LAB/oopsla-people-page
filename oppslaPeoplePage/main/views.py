@@ -85,10 +85,9 @@ def pptViewPage(request, name, pptid):
     gitUrl = file.readline().split('//')[0].strip()
     imgPath = 'assets/profileImg/' + file.readline().split('//')[0].strip()
     
-    pptFile = models.SeminarPPT.objects.filter(id=pptid)
-    print(pptFile[0].pptFileName)
+    pptFile = models.SeminarPPT.objects.get(id=pptid)
     
-    return render(request,"ppt-view.html", {'urlName': urlName, 'name':name, 'position': position, 'gitId':gitId, 'gitUrl': gitUrl, 'imgPath': imgPath, 'pptFile':pptFile[0]})
+    return render(request,"ppt-view.html", {'urlName': urlName, 'name':name, 'position': position, 'gitId':gitId, 'gitUrl': gitUrl, 'imgPath': imgPath, 'pptFile':pptFile})
 
 # 파일 다운로드
 def pptDownload(request, name, pptid):

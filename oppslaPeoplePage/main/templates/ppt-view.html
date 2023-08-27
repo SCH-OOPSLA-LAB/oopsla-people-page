@@ -50,13 +50,12 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
 
-                        <h2>{{pptFile.pptFileName}}Seminar File</h2>
+                        <h2>Seminar PPT</h2>
 
                         <div>
-                            <label>첨부 파일</label>
-                                <form action="http://127.0.0.1:8000/people/{{urlName}}/ppts/{{pptFile.id}}/download/">
-                                <button type="submit">다운로드</button>
-                                </form>
+                            <form action="http://127.0.0.1:8000/people/{{urlName}}/ppts/{{pptFile.id}}/download/" style="float: right;">
+                                <button type="submit" style="margin-bottom: 3rem;">다운로드</button>
+                            </form>
                         </div>
                         
                     </div>
