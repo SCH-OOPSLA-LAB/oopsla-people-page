@@ -9,8 +9,8 @@ peopleList = os.listdir(currentPos+'\\peoples')
 # pathList = [path(name, views.test, name=name) for name in peopleList]
 
 urlpatterns = [
-               path('<str:name>', views.peoplePage),
-               path('<str:name>/ppts', views.pptIndexPage),
-               path('<str:name>/ppts/upload', views.pptUploadPage),
+               path('<str:name>/', views.peoplePage),
+               path('<str:name>/ppts/', views.pptIndexPage),
+               path('<str:name>/ppts/upload/', views.pptUploadPage),
                
                ]

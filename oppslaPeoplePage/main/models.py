@@ -6,3 +6,4 @@ class SeminarPPT(models.Model):
     people = models.CharField(max_length=50)
     uploadDate = models.DateField(auto_created=True, auto_now=True)
     pptFile = models.FileField()
+    pptFileName = models.CharField(max_length=50)

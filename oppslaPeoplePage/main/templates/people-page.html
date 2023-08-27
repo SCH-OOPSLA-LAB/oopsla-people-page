@@ -51,42 +51,16 @@
                     <div class="col-lg-6">
                         <h2>Seminar</h2>
                         
+                        {% for list in pptList %}
                         <a href="naver.com">
                             <div class="seminar-box"> 
-                                <p class="seminar-title">OOPSLA 4학년 권하준.pptx</p> 
-                                <p class="seminar-date">2019.10.22</p> 
+                                <p class="seminar-title">{{list.pptFileName}}</p> 
+                                <p class="seminar-date">{{list.uploadDate}}</p> 
                             </div>
                         </a>
+                        {% endfor %}
 
-                        <a href="naver.com">
-                            <div class="seminar-box"> 
-                                <p class="seminar-title">OOPSLA 4학년 권하준.pptx</p> 
-                                <p class="seminar-date">2019.10.22</p> 
-                            </div>
-                        </a>
-
-                        <a href="naver.com">
-                            <div class="seminar-box"> 
-                                <p class="seminar-title">OOPSLA 4학년 권하준.pptx</p> 
-                                <p class="seminar-date">2019.10.22</p> 
-                            </div>
-                        </a>
-
-                        <a href="naver.com">
-                            <div class="seminar-box"> 
-                                <p class="seminar-title">OOPSLA 4학년 권하준.pptx</p> 
-                                <p class="seminar-date">2019.10.22</p> 
-                            </div>
-                        </a>
-
-                        <a href="naver.com">
-                            <div class="seminar-box"> 
-                                <p class="seminar-title">OOPSLA 4학년 권하준.pptx</p> 
-                                <p class="seminar-date">2019.10.22</p> 
-                            </div>
-                        </a>
-
-                        <a href="{{ urlName }}/ppts"><p class="mb-0" style="text-align: end; margin-top: 2%;margin-right: 5%;">more</p></a>
+                        <a href="http://127.0.0.1:8000/people/{{ urlName }}/ppts/"><p class="mb-0" style="text-align: end; margin-top: 2%;margin-right: 5%;">more</p></a>
                     </div>
                 </div>
             </div>

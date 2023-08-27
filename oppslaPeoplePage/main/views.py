@@ -19,7 +19,12 @@ def peoplePage(request, name):
     gitUrl = file.readline().split('//')[0].strip()
     imgPath = 'assets/profileImg/' + file.readline().split('//')[0].strip()
     
-    return render(request, "people-page.html", {'urlName': urlName, 'name':name, 'position': position, 'gitId':gitId, 'gitUrl': gitUrl, 'imgPath': imgPath})
+    pptList = models.SeminarPPT.objects.all()
+    if len(pptList) > 5:
+        pptList = pptList[::-1]
+        pptList = pptList[0:5]
+    
+    return render(request, "people-page.html", {'urlName': urlName, 'name':name, 'position': position, 'gitId':gitId, 'gitUrl': gitUrl, 'imgPath': imgPath, 'pptList':pptList})
 
 # ppt 목록 페이지
 def pptIndexPage(request, name):
@@ -54,10 +59,11 @@ def pptUploadPage(request, name):
     try:
         if request.method == 'POST':
             pptFile = request.FILES['pptFile']
-            pptFileModel = models.SeminarPPT(people = urlName, pptFile = pptFile)
+            print(pptFile)
+            pptFileModel = models.SeminarPPT(people = urlName, pptFile = pptFile, pptFileName=pptFile)
             pptFileModel.save()
             print('저장 완료')
-            return redirect('/people/'+urlName)
+            return redirect('http://127.0.0.1:8000/people/'+urlName)
     except:
         print("저장 실패")
         pass
