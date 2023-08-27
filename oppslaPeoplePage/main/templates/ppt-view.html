@@ -50,26 +50,15 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
 
-                        <ul style="width: 100%; display: inline-block;">
-                            <li style="float: left;">
-                                <h2 style="margin: 0;">Seminar</h2>
-                            </li>
-                            <li class="textButton" style="float: right;">
-                                <a href="http://127.0.0.1:8000/people/{{urlName}}/ppts/upload">Upload</a>
-                            </li>
-                        
-                        </ul>
-                            
-                        
-                        {% for list in pptList %}
-                        <a href="http://127.0.0.1:8000/people/hajun/ppts/{{list.id}}/">
-                            <div class="seminar-box"> 
-                                <p class="seminar-title">{{list.pptFileName}}</p> 
-                                <p class="seminar-date">{{list.uploadDate}}</p> 
-                            </div>
-                        </a>
-                        {% endfor %}
+                        <h2>{{pptFile.pptFileName}}Seminar File</h2>
 
+                        <div>
+                            <label>첨부 파일</label>
+                                <form action="http://127.0.0.1:8000/people/{{urlName}}/ppts/{{pptFile.id}}/download/">
+                                <button type="submit">다운로드</button>
+                                </form>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

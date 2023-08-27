@@ -12,5 +12,7 @@ urlpatterns = [
                path('<str:name>/', views.peoplePage),
                path('<str:name>/ppts/', views.pptIndexPage),
                path('<str:name>/ppts/upload/', views.pptUploadPage),
+               path('<str:name>/ppts/<int:pptid>/', views.pptViewPage),
+               path('<str:name>/ppts/<int:pptid>/download/', views.pptDownload),
                
                ]
