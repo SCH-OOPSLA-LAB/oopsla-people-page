@@ -1,5 +1,44 @@
 권하준			// Name
 App/Android		// Posigion
-haZuny			// github id
 https://github.com/haZuny	// github link
 hajun.jpg			// img file name
+
+자기소개
+- 이름
+- 생일
+- 취미
+- 포지션
+
+연락처
+- email
+- github link
+- sns link
+
+자기소개 및 관심 분야
+
+진행했던 프로젝트 / 공부한 내용
+
+// 다음과 같은 순서로 기입해주세요
+// 이미지 파일 이름
+// 이름
+// 생년월일(0000.00.00)
+// 관심 분야
+// 취미
+// 이메일 주소
+// 깃허브 아이디(없으면 null 입력)
+// SNS 아이디( 없으면 null 입력)
+// 자기소개(길게)(줄바꿈은 <br> 태그 입력) (코딩에 관심을 가진 이유, 웁슬라 들어온 이유, 대외활동 경험, 관심분야, 취업진로, 등등등...) (챗지피티를 적극 이용해서 작성합시다...)
+// 활동 내용 및 수상 내역(사소한것들도 좋아요, 예를들면 아트오브자바 코어자바 등)
+
+hajun.jpg
+권하준
+2000.12.09
+Backend Developer
+악기 연주
+
+gkwns5791@naver.com
+https://github.com/haZuny
+https://www.instagram.com/ha.zuny/
+
+안녕하세요. 순천향대학교 컴퓨터 공학과에 재학 중인 권하준이라고 합니다.<br>컴퓨터 하나만 있으면 제가 원하는 것을 무엇이든 만들 수 있다는 매력에 빠져 컴퓨터 공학과로 전공을 정하게 되었습니다. 비록 모르는것을 하나하나 찾아가면서 개발하는 과정이 쉽지만은 않지만, 프로젝트 결과물이 하나하나 쌓이는 것을 보며 보람을 느끼고 계속해서 공부중입니다.<br>컴퓨터 공학과에서 여러가지 수업을 들으며 코딩에 대한 기초 지식과, 웹 프로그래밍, Android, Machine Learning 등 여러 분야를 공부해왔고 미래에 Backend Server Developer가 되는것을 목표로 하고 있습니다.<br>OOPSLA에 들어온 후 'Art Of Java'라는 책을 공부하며, 객체지향 프로그래밍의 특성과, Java라는 언어에 대해 더 깊이 이해할 수 있는 시간을 가졌습니다.<br>2020 멋쟁이 사자처럼(LikeLion)SCH 8기 멤버로 활동하며 Python Django를 활용한 Web Page Server을 구축해보았고, 2022~2023년 GDSC의 App 파트 Core Member로 활동하며 Flutter를 활용하여 다양한 프로젝트를 진행했습니다.<br>현재 딥러닝을 활용한 음향처리에 관심을 가지고 있고, 이에 관련된 프로젝트를 구상중입니다.
+

@@ -36,35 +36,12 @@
         <!-- Header - set the background image for the header in the line below-->
         <header class="py-1" style="background-color: black; height: fit-content;">
             <div class="text-center my-5">
-                <img class="img-fluid rounded-circle mb-4" src="{% get_static_prefix %}{{imgPath}}" alt="img" style="width: 10%;"/>
-                <h1 class="text-white fs-3 fw-bolder">{{ name }}</h1>
-                <p class="text-white-50 mb-0">{{ position }}</p>
+                <img class="img-fluid rounded-circle mb-4" src="{% get_static_prefix %}img/oopsla.png" alt="img" style="width: 10%;"/>
+                <h1 class="text-white fs-3 fw-bolder">O O P S L A</h1>
+                <p class="text-white-50 mb-0">{{ name }}</p>
             </div>
         </header>
 
-
-
-        <!-- Content section-->
-        <section class="py-5">
-            <div class="container my-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <h2>Seminar</h2>
-                        
-                        {% for list in pptList %}
-                        <a href="http://127.0.0.1:8000/people/hajun/ppts/{{list.id}}/">
-                            <div class="seminar-box"> 
-                                <p class="seminar-title">{{list.pptFileName}}</p> 
-                                <p class="seminar-date">{{list.uploadDate}}</p> 
-                            </div>
-                        </a>
-                        {% endfor %}
-
-                        <a href="http://127.0.0.1:8000/people/{{ urlName }}/ppts/"><p class="mb-0" style="text-align: end; margin-top: 2%;margin-right: 5%;">more</p></a>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         
         
