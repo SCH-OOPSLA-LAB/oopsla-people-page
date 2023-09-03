@@ -6,6 +6,7 @@
 
 # 이미지 파일 이름_imgfile
 # 이름_name
+# 영어이름_englishname
 # 생년월일(0000.00.00)_birthday
 # 관심 분야_posiiton
 # 이메일 주소_email
