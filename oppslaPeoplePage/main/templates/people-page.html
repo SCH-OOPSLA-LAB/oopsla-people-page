@@ -56,7 +56,7 @@
                         <div style="display: flex; justify-content: space-between; width: 100%; height: 180%;">
 
                             
-                            <img id="profileImg" src="{% get_static_prefix %}img/{{imgfile}}" style="width: 45%; height:45%;">
+                            <img id="profileImg" src="{% get_static_prefix %}img/thumbnail/{{imgfile}}" style="width: 45%; height:45%;">
                             <span style="width: 45%; height: 45%; display: flex; flex-direction: column; justify-content: space-between;">
                                 <p><span class="lead" style="white-space: pre">name:&#9;</span>
                                     <span class="mb-0" style="font-size: 1.2rem;;">{{name}}</span>
@@ -70,12 +70,12 @@
                                     <span class="mb-0" style="font-size: 1.2rem;">{{birthday}}</span>
                                 </p>
                                 <p>
-                                    <span class="lead" style="white-space: pre">contact:&#9;</span>
-                                    <span class="mb-0" style="font-size: 1.2rem;">{{email}}</span>
+                                    <span class="lead" style="white-space: pre">mail:&#9;</span>
+                                    <a class="mb-0" style="font-size: 1.2rem;" href="mailto:{{email}}">{{email}}</a>
                                 </p>
                                 {% if giturl != '없음' or snsurl != '없음'%}
                                 <p>
-                                    <span class="lead" style="white-space: pre">more:&#9;</span>
+                                    <span class="lead" style="white-space: pre">contact:&#9;</span>
                                     {% if giturl != '없음' %}
                                     <a href="{{giturl}}" style="margin-right: 1rem;">
                                         <img src="{% get_static_prefix %}img/github.png" style="width: 2rem; height: 2rem;">
@@ -83,7 +83,7 @@
                                     </a>
                                     {% endif %}
                                     {% if snsrul != '없음' %}
-                                    <a href="{{snsrul}}">
+                                    <a href="{{snsurl}}">
                                         <img src="{% get_static_prefix %}img/sns.png" style="width: 2rem; height: 2rem;">
                                         SNS
                                     </a>
