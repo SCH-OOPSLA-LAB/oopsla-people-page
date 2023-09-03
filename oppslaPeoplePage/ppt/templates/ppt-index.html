@@ -57,9 +57,19 @@
                         
                             {% for list in pptList %}
                             <a href="http://127.0.0.1:8000/ppt/{{list.id}}/">
-                                <div class="seminar-box"> 
-                                    <p class="seminar-title">{{list.pptFileName}}</p>
-                                    <div class="seminar-date">
+                                <div style="background-color: #eeeeee; border-radius: 20rem; width: 100%; height: 4rem; margin-top: 1.5rem; position: relative;"> 
+                                    <p style="font-size: 1.25rem;
+                                    font-weight: 300;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 0;
+                                    transform: translate(2rem, -50%);">{{list.pptFileName}}</p>
+                                    <div style="font-size: 0.9rem;
+                                    font-weight: 300;
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 0;
+                                    transform: translate(-2rem, -50%);">
                                         <div style="text-align: right;">{{list.people}}</div> 
                                         <div style="text-align: right;">{{list.uploadDate}}</div> 
                                     </div>

@@ -30,9 +30,12 @@ intro::OOPSLA에 들어온 후 'Art Of Java'라는 책을 공부하며, 객체�
 intro::2020 멋쟁이 사자처럼(LikeLion)SCH 8기 멤버로 활동하며 Python Django를 활용한 Web Page Server을 구축해보았고, 2022~2023년 GDSC의 App 파트 Core Member로 활동하며 Flutter를 활용하여 다양한 프로젝트를 진행했습니다.
 intro::현재 딥러닝을 활용한 음향처리에 관심을 가지고 있고, 이에 관련된 프로젝트를 구상중입니다.
 
+career::2019 순천향대학교 컴퓨터공학과 입학
 career::2020~2021 멋쟁이사자처럼(LikeLion)SCH 8th Member 수료
-career::2020 멋쟁이사자처럼 알까고 대회 은상<br>2022~ 순천향대 객체지향 연구실 OOPSLA 부원
-career::2022 순천향대학교 공과대학 학술제 은상 수상 - 휴지통 위치 추천 애플리케이션<br>2022 순천향대학교 공과대학 학술제 장려상 수상 - 시각장애인을 위한 종이 활자 책 리딩 애플리케이션
+career::2020 멋쟁이사자처럼 알까고 대회 은상
+career::2022~ 순천향대 객체지향 연구실 OOPSLA 부원
+career::2022 순천향대학교 공과대학 학술제 은상 수상 - 휴지통 위치 추천 애플리케이션
+career::2022 순천향대학교 공과대학 학술제 장려상 수상 - 시각장애인을 위한 종이 활자 책 리딩 애플리케이션
 career::2022~2023 GDSC SCH 4th App part Core member 수료
 
 end::end

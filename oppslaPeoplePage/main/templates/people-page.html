@@ -23,9 +23,9 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#information">Information</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#introducing">Introducing</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#career">Career</a></li>
                     </ul>
                 </div>
             </div>
@@ -48,7 +48,7 @@
 
 
         <!-- Content section-->
-        <section class="py-5">
+        <section class="py-5" id="information">
             <div class="container my-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
@@ -98,25 +98,28 @@
             </div>
         </section>
 
+        <hr>
 
         <!-- Content section-->
-        <section class="py-5">
+        <section class="py-5" id="introducing">
             <div class="container my-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
-                        <h2>Introducing {{englishname}}</h2>
+                        <h2 style="margin-bottom: 2rem;">Introducing {{englishname}}</h2>
                         <p class="mb-0">{{intro|linebreaksbr}}</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <hr>
         
         <!-- Content section-->
-        <section class="py-5">
+        <section class="py-5" id="career">
             <div class="container my-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
-                        <h2>Career of {{englishname}}</h2>
+                        <h2 style="margin-bottom: 2rem;">Career of {{englishname}}</h2>
                         <p class="mb-0">{{career|linebreaksbr}}</p>
                     </div>
                 </div>
