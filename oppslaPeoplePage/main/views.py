@@ -17,8 +17,8 @@ def peoplePage(request, name):
     file = open(peopleDir + "profile.txt", "r", encoding='UTF-8')
 
     peopleDict = {'urlName':urlName}
-    introIdx = 1
-    careerIdx = -1
+    # introIdx = 1
+    # careerIdx = -1
 
     while True:
         text = file.readline().split('#')[0].strip()
@@ -32,16 +32,21 @@ def peoplePage(request, name):
         elif category == '':
             continue
         elif category == 'intro':
-            peopleDict[introIdx] = content
-            introIdx += 1
+            try:
+                peopleDict['intro'] += '\n\n'+content
+            except:
+                peopleDict['intro'] = content
         elif category == 'career':
-            peopleDict[careerIdx] = content
-            careerIdx -= 1
+            try:
+                peopleDict['career'] += '\n\n* '+content
+            except:
+                peopleDict['career'] = '* '+content
         else:
             peopleDict[category]=content
 
-    peopleDict['introNums'] = introIdx - 1
-    peopleDict['careerIdx'] = careerIdx + 1
+    # peopleDict['introNums'] = introIdx - 1
+    # peopleDict['careerIdx'] = careerIdx + 1
     print(peopleDict)
+    print('asdfasdfasdfasz')
     
     return render(request, "people-page.html", peopleDict)
