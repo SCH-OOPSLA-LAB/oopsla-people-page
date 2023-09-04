@@ -42,22 +42,24 @@
             </div>
         </header>
 
-
-
-
+        
+        
         <!-- Content section-->
         <section class="py-5">
             <div class="container my-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
-
+                        
                         <h2>Seminar PPT</h2>
-
+                        
                         <div>
                             <form action="http://127.0.0.1:8000/ppt/{{pptFile.id}}/download/" style="float: right;">
                                 <button type="submit" style="margin-bottom: 3rem;">Download</button>
                             </form><br><br><br><br>
-
+                           
+                            {% for i in "x"|rjust:pptLength %}
+                                <div><img style="width: 100%;" src="{% get_static_prefix%}img/ppts/{{pptFile.id}}/{{forloop.counter}}.png"></div>
+                            {% endfor %}
 
                             <form method="post" action="http://127.0.0.1:8000/ppt/{{pptFile.id}}/delete/" style="margin-top: 2rem;">
                                 {% csrf_token %}
