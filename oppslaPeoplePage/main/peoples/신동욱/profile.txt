@@ -16,7 +16,7 @@
 
 imgfile::donguk.jpg
 name::신동욱
-englishname::DongUk Shin
+englishname::Donguk
 birthday::2001.12.26
 position::Backend Developer
 email::az9170@naver.com
