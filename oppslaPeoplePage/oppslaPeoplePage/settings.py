@@ -131,3 +131,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media/ppts")
+
+PASSWORD = "1234"
+IP_ADDRESS="220.69.208.121:8000/"

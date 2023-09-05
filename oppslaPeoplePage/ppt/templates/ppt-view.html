@@ -23,8 +23,8 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/ppt/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="http://127.0.0.1:8000/ppt/upload/">Upload</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="http://{{ipaddr}}ppt/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="http://{{ipaddr}}ppt/upload/">Upload</a></li>
                     </ul>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                         <h2>Seminar PPT</h2>
                         
                         <div>
-                            <form action="http://127.0.0.1:8000/ppt/{{pptFile.id}}/download/" style="float: right;">
+                            <form action="http://{{ipaddr}}ppt/{{pptFile.id}}/download/" style="float: right;">
                                 <button type="submit" style="margin-bottom: 3rem;">Download</button>
                             </form><br><br><br><br>
                            
@@ -60,7 +60,7 @@
                                 <div><img style="width: 100%;" src="{% get_static_prefix%}img/ppts/{{pptFile.id}}/{{forloop.counter}}.png"></div>
                             {% endfor %}
 
-                            <form method="post" action="http://127.0.0.1:8000/ppt/{{pptFile.id}}/delete/" style="margin-top: 2rem;">
+                            <form method="post" action="http://{{ipaddr}}ppt/{{pptFile.id}}/delete/" style="margin-top: 2rem;">
                                 {% csrf_token %}
                                 <span style="float: left; white-space: pre;">비밀번호&#9;&#9;</span>
                                 <input type="text" name="password">
